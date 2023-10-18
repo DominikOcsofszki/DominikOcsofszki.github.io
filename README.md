@@ -1,0 +1,2 @@
+# DominikOcsofszki
+# DominikOcsofszki.github.io
