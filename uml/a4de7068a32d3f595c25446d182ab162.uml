@@ -1,0 +1,14 @@
+@startuml
+
+left to right direction
+actor "User" as u
+rectangle IDE {
+  usecase "Eat Food" as UC1
+  usecase "Pay for Food" as UC2
+  usecase "Drink" as UC3
+}
+u --> UC1
+u --> UC2
+u --> UC3
+
+@enduml
