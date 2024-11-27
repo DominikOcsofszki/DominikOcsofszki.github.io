@@ -1,0 +1,196 @@
+{
+	"basics": {
+		"name": "Dominik Ocsofszki",
+		"label": "Computer Science",
+		"email": "cv@DominikO.de",
+		"phone": "DRAFT",
+		"url": "DominikO.de",
+		"location": {
+			"address": "Europaring 86",
+			"postalCode": "53757",
+			"city": "Sankt Augustin",
+			"countryCode": "DE"
+		},
+		"profiles": []
+	},
+	"education": [
+		{
+			"institution": "Hochschule Bonn-Rhein-Sieg",
+			"area": "Informatik",
+			"studyType": "Bachelor of Science (B.Sc.)",
+			"startDate": "2020",
+			"endDate": "2025",
+			"gpa": "1.6",
+			"courses": [
+				"Spezialisierung: Komplexe Softwaresysteme"
+			]
+		},
+		{
+			"institution": "Vietnamese-German University, Vietnam",
+			"area": "Informatik",
+			"studyType": "Bachelor of Science (B.Sc.)",
+			"startDate": "2022",
+			"endDate": "2023",
+			"gpa": "1.4",
+			"courses": [
+				"Austauschjahr"
+			]
+		},
+		{
+			"institution": "Rheinische Friedrich-Wilhelms-Universität Bonn",
+			"area": "Mathematik",
+			"studyType": "Bachelor of Science (B.Sc.)",
+			"startDate": "2019",
+			"endDate": "2020"
+		},
+		{
+			"institution": "Abendgymnasium Lahr",
+			"area": "Abitur",
+			"gpa": "1.4",
+			"startDate": "2016",
+			"endDate": "2017"
+		},
+		{
+			"institution": "Abendgymnasium Offenburg",
+			"area": "Abitur",
+			"startDate": "2014",
+			"endDate": "2016"
+		},
+		{
+			"institution": "Hydraulik Power Team GmbH, Hohberg",
+			"area": "Technischer Zeichner",
+			"studyType": "Ausbildung",
+			"startDate": "2010",
+			"endDate": "2014",
+			"courses": [
+				"CNC-Fachkraft (IHK) Fortgeschrittene Stufe B + C (2013)"
+			]
+		}
+	],
+	"work": [
+		{
+			"name": "adiutaByte GmbH",
+			"position": "Werkstudent - Software-Entwicklung",
+			"startDate": "2024-06",
+			"endDate": "Present"
+		},
+		{
+			"name": "adiutaByte GmbH",
+			"position": "Praxisprojekt - Software-Entwicklung/ Algorithmus-Entwicklung",
+			"startDate": "2024-02",
+			"endDate": "2024-05"
+		},
+		{
+			"name": "Pharma Mall Electronic Commerce GmbH",
+			"position": "Studentische Hilfskraft - Entwicklungs-Pool",
+			"startDate": "2022-04",
+			"endDate": "2022-08"
+		},
+		{
+			"name": "Hochschule Bonn-Rhein-Sieg",
+			"position": "Studentische Hilfskraft - Informatik-Tutor",
+			"startDate": "2021",
+			"endDate": "2022"
+		},
+		{
+			"name": "Hydraulik-Power-Team GmbH",
+			"position": "Technischer Zeichner, CNC-Maschinenbediener",
+			"startDate": "2010",
+			"endDate": "2017"
+		}
+	],
+	"volunteer": [
+		{
+			"organization": "Vietnamese-German University, Vietnam",
+			"position": "Mitglied Presto – VGU PR & Event Team",
+			"startDate": "2022",
+			"endDate": "2023"
+		},
+		{
+			"organization": "Hochschule Bonn-Rhein-Sieg",
+			"position": "Mitglied Studienbeirat Informatik",
+			"startDate": "2021",
+			"endDate": "2023"
+		},
+		{
+			"organization": "Hochschule Bonn-Rhein-Sieg",
+			"position": "Fachschaftsrat: Mitglied, stellv. Vorsitzender, Vorsitzender",
+			"startDate": "2021",
+			"endDate": "2022"
+		},
+		{
+			"organization": "Agape Internationales Ökumenisches Zentrum, Italien",
+			"position": "Freiwilliger Ökumenischer Friedensdienst",
+			"startDate": "2017",
+			"endDate": "2019",
+			"summary": "Unterstützte die Planung und Durchführung von Camps/Seminaren, einschließlich des Internationalen Politischen Camps, Erasmus+ Projekt TEVIP und Campo Precadetti/e. Hauptverantwortung für die Koordination und Verwaltung der Küche für bis zu 100 Gäste."
+		}
+	],
+	"awards": [
+		{
+			"title": "Deutschlandstipendium",
+			"date": "2024",
+			"awarder": "Hochschule Bonn-Rhein-Sieg"
+		},
+		{
+			"title": "Deutschlandstipendium",
+			"date": "2023",
+			"awarder": "Hochschule Bonn-Rhein-Sieg"
+		},
+		{
+			"title": "Deutschlandstipendium",
+			"date": "2021",
+			"awarder": "Hochschule Bonn-Rhein-Sieg"
+		},
+		{
+			"title": "DMV-Abiturpreis Mathematik",
+			"date": "2017",
+			"awarder": "Deutsche Mathematiker-Vereinigung (DMV)"
+		}
+	],
+	"skills": [
+		{
+			"name": "Programmiersprachen",
+			"level": "Advanced",
+			"keywords": [
+				"Java",
+				"Python",
+				"Bash/Zsh",
+				"JavaScript",
+				"TypeScript"
+			]
+		},
+		{
+			"name": "Frameworks",
+			"level": "Intermediate",
+			"keywords": [
+				"Angular",
+				"Spring Boot"
+			]
+		},
+		{
+			"name": "Tools & Interests",
+			"keywords": [
+				"NeoVim",
+				"Interpreter- und Compilerbau",
+				"Tree-Sitter",
+				"Language-Server",
+				"LSP"
+			]
+		}
+	],
+	"languages": [
+		{
+			"language": "Deutsch",
+			"fluency": "Muttersprache"
+		},
+		{
+			"language": "Englisch",
+			"fluency": "Fließend"
+		},
+		{
+			"language": "Italienisch",
+			"fluency": "Konversationssicher"
+		}
+	]
+}
