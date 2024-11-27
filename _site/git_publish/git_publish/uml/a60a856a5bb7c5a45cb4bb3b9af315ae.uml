@@ -1,0 +1,14 @@
+@startuml
+
+left to right direction
+actor "User" as u
+rectangle LSP-Client {
+  usecase "go-to-definition" as UC1
+  usecase "go-to-definition" as UC2
+  usecase "go-to-definition" as UC3
+}
+u --> UC1
+u --> UC2
+u --> UC3
+
+@enduml

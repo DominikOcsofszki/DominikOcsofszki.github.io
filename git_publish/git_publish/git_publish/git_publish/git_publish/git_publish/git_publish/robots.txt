@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://dominikocsofszki.github.io/_site/sitemap.xml

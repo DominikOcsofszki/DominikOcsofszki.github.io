@@ -153,50 +153,6 @@
             
           
             
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
               
                 
                 <li class="nav-item active">
@@ -206,10 +162,6 @@
                   </a>
                 </li>
               
-            
-          
-            
-          
             
           
             
@@ -249,40 +201,14 @@
             
           
             
-              
-                
-                
-                <li class="nav-item dropdown ">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">submenus
-                    
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    
-                      
-                        <a class="dropdown-item " href="/publications/">publications</a>
-                      
-                    
-                      
-                        <div class="dropdown-divider"></div>
-                      
-                    
-                      
-                        <a class="dropdown-item " href="/projects/">projects</a>
-                      
-                    
-                      
-                        <div class="dropdown-divider"></div>
-                      
-                    
-                      
-                        <a class="dropdown-item " href="/blog/">blog</a>
-                      
-                    
-                  </div>
-                </li>
-              
-            
           
+          
+            <!-- Search -->
+            <li class="nav-item">
+              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              </button>
+            </li>
           
           
             <!-- Toogle theme mode -->
@@ -327,97 +253,16 @@
             <th scope="row">Nov 24, 2024</th>
             <td>
               
-                <a class="post-link" href="/blog/2024/Anhs-demo/">Anhs Portfolio</a>
+                <a class="post-link" href="/blog/2024/PDM/">PDM</a>
               
             </td>
           </tr>
         
           <tr>
-            <th scope="row">May 01, 2024</th>
+            <th scope="row">Nov 24, 2024</th>
             <td>
               
-                <a class="post-link" href="/blog/2024/tabs/">a post with tabs</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row">Apr 30, 2024</th>
-            <td>
-              
-                <a class="post-link" href="/blog/2024/typograms/">a post with typograms</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row">Apr 28, 2024</th>
-            <td>
-              
-                <a class="post-link" href="/blog/2024/post-citation/">a post that can be cited</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row">Apr 15, 2024</th>
-            <td>
-              
-                <a class="post-link" href="/blog/2024/pseudocode/">a post with pseudo code</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row">Jan 27, 2024</th>
-            <td>
-              
-                <a class="post-link" href="/blog/2024/code-diff/">a post with code diff</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row">Jan 27, 2024</th>
-            <td>
-              
-                <a class="post-link" href="/blog/2024/advanced-images/">a post with advanced image components</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row">Jan 27, 2024</th>
-            <td>
-              
-                <a class="post-link" href="/blog/2024/vega-lite/">a post with vega lite</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row">Jan 26, 2024</th>
-            <td>
-              
-                <a class="post-link" href="/blog/2024/geojson-map/">a post with geojson</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row">Jan 26, 2024</th>
-            <td>
-              
-                <a class="post-link" href="/blog/2024/echarts/">a post with echarts</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row">Jan 26, 2024</th>
-            <td>
-              
-                <a class="post-link" href="/blog/2024/chartjs/">a post with chart.js</a>
+                <a class="post-link" href="/blog/2024/CUSTOMIZE/">CUSTOM</a>
               
             </td>
           </tr>
@@ -619,6 +464,140 @@
 
 
     
+  <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script>
+  <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys>
+  <script>
+    let searchTheme = determineComputedTheme();
+    const ninjaKeys = document.querySelector('ninja-keys');
+
+    if (searchTheme === 'dark') {
+      ninjaKeys.classList.add('dark');
+    } else {
+      ninjaKeys.classList.remove('dark');
+    }
+
+    const openSearchModal = () => {
+      // collapse navbarNav if expanded on mobile
+      const $navbarNav = $('#navbarNav');
+      if ($navbarNav.hasClass('show')) {
+        $navbarNav.collapse('hide');
+      }
+      ninjaKeys.open();
+    };
+  </script>
+  <script>
+    // get the ninja-keys element
+    const ninja = document.querySelector('ninja-keys');
+
+    // add the home and posts menu items
+    ninja.data = [{
+        id: "nav-about",
+        title: "about",
+        section: "Navigation",
+        handler: () => {
+          window.location.href = "/";
+        },
+      },{id: "nav-blog",
+              title: "blog",
+              description: "",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/blog/";
+              },
+            },{id: "nav-projects",
+              title: "projects",
+              description: "A growing collection of your cool projects.",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/projects/";
+              },
+            },{id: "nav-repositories",
+              title: "repositories",
+              description: "Repos from my Github",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/repositories/";
+              },
+            },{id: "nav-cv",
+              title: "CV",
+              description: "",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/cv/";
+              },
+            },{id: "post-pdm",
+          
+            title: "PDM",
+          
+          description: "PDM",
+          section: "Posts",
+          handler: () => {
+            
+              window.location.href = "/blog/2024/PDM/";
+            
+          },
+        },{id: "post-custom",
+          
+            title: "CUSTOM",
+          
+          description: "PDM",
+          section: "Posts",
+          handler: () => {
+            
+              window.location.href = "/blog/2024/CUSTOMIZE/";
+            
+          },
+        },{id: "post-a-post-with-code",
+          
+            title: "a post with code",
+          
+          description: "an example of a blog post with some code",
+          section: "Posts",
+          handler: () => {
+            
+              window.location.href = "/blog/2015/code/";
+            
+          },
+        },{id: "news-beginn-of-my-bachelor-thesis",
+              title: 'Beginn of my bachelor thesis',
+              description: "",
+              section: "News",handler: () => {
+                  window.location.href = "/news/announcement_2/";
+                },},{id: "projects-project-lsp",
+              title: 'project lsp',
+              description: "building a lsp-server",
+              section: "Projects",handler: () => {
+                  window.location.href = "/projects/9_project/";
+                },},{
+          id: 'light-theme',
+          title: 'Change theme to light',
+          description: 'Change the theme of the site to Light',
+          section: 'Theme',
+          handler: () => {
+            setThemeSetting("light");
+          },
+        },
+        {
+          id: 'dark-theme',
+          title: 'Change theme to dark',
+          description: 'Change the theme of the site to Dark',
+          section: 'Theme',
+          handler: () => {
+            setThemeSetting("dark");
+          },
+        },
+        {
+          id: 'system-theme',
+          title: 'Use system default theme',
+          description: 'Change the theme of the site to System Default',
+          section: 'Theme',
+          handler: () => {
+            setThemeSetting("system");
+          },
+        },];
+  </script>
+  <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script>
+
 
   </body>
 </html>
