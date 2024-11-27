@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://dominikocsofszki.github.io/_site/sitemap.xml
+Sitemap: https://dominikocsofszki.github.io/sitemap.xml

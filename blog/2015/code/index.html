@@ -146,6 +146,10 @@
             
           
             
+          
+            
+          
+            
               
                 
                 <li class="nav-item active">
@@ -195,6 +199,13 @@
           
             
           
+          
+            <!-- Search -->
+            <li class="nav-item">
+              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              </button>
+            </li>
           
           
             <!-- Toogle theme mode -->
@@ -283,12 +294,37 @@ It supports more than 100 languages.
 This example is in C++.
 All you have to do is wrap your code in markdown code tags:</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">c++
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td>
+<td class="rouge-code"><pre><span class="p">```</span><span class="nl">c++
 </span><span class="n">code</span> <span class="n">code</span> <span class="n">code</span>
 <span class="p">```</span>
-</code></pre></div></div>
+</pre></td>
+</tr></tbody></table></code></pre></div></div>
 
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="k">const</span> <span class="err">\</span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td>
+<td class="rouge-code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="k">const</span> <span class="err">\</span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
 <span class="p">{</span>
     <span class="n">string</span> <span class="n">myString</span><span class="p">;</span>
 
@@ -305,11 +341,23 @@ All you have to do is wrap your code in markdown code tags:</p>
 
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div></div>
+</pre></td>
+</tr></tbody></table></code></pre></div></div>
 
 <p>For displaying code in a list item, you have to be aware of the indentation, as stated in this <a href="https://stackoverflow.com/questions/34987908/embed-a-code-block-in-a-list-item-with-proper-indentation-in-kramdown/38090598#38090598" rel="external nofollow noopener" target="_blank">Stackoverflow answer</a>. You must indent your code by <strong>(3 * bullet_indent_level)</strong> spaces. This is because kramdown (the markdown engine used by Jekyll) indentation for the code block in lists is determined by the column number of the first non-space character after the list item marker. For example:</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">1.</span> We can put fenced code blocks inside nested bullets, too.
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td>
+<td class="rouge-code"><pre><span class="p">1.</span> We can put fenced code blocks inside nested bullets, too.
 <span class="p">
    1.</span> Like this:<span class="sb">
 
@@ -318,7 +366,8 @@ All you have to do is wrap your code in markdown code tags:</p>
       ```
 
 </span><span class="p">   2.</span> The key is to indent your fenced block in the same line as the first character of the line.
-</code></pre></div></div>
+</pre></td>
+</tr></tbody></table></code></pre></div></div>
 
 <p>Which displays:</p>
 
@@ -331,8 +380,12 @@ All you have to do is wrap your code in markdown code tags:</p>
         <p>Like this:</p>
 
         <div class="language-c highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code><span class="n">printf</span><span class="p">(</span><span class="s">"Hello, World!"</span><span class="p">);</span>
-</code></pre></div>        </div>
+<div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre><span class="n">printf</span><span class="p">(</span><span class="s">"Hello, World!"</span><span class="p">);</span>
+</pre></td>
+</tr></tbody></table></code></pre></div>        </div>
       </li>
       <li>
         <p>The key is to indent your fenced block in the same line as the first character of the line.</p>
@@ -416,7 +469,13 @@ Produces something like this:</p>
   
 
   <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/videos/">a post with videos</a>
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/PDM/">PDM</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2024/CUSTOMIZE/">CUSTOM</a>
   </li>
 
 
@@ -620,6 +679,140 @@ Produces something like this:</p>
 
 
     
+  <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script>
+  <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys>
+  <script>
+    let searchTheme = determineComputedTheme();
+    const ninjaKeys = document.querySelector('ninja-keys');
+
+    if (searchTheme === 'dark') {
+      ninjaKeys.classList.add('dark');
+    } else {
+      ninjaKeys.classList.remove('dark');
+    }
+
+    const openSearchModal = () => {
+      // collapse navbarNav if expanded on mobile
+      const $navbarNav = $('#navbarNav');
+      if ($navbarNav.hasClass('show')) {
+        $navbarNav.collapse('hide');
+      }
+      ninjaKeys.open();
+    };
+  </script>
+  <script>
+    // get the ninja-keys element
+    const ninja = document.querySelector('ninja-keys');
+
+    // add the home and posts menu items
+    ninja.data = [{
+        id: "nav-about",
+        title: "about",
+        section: "Navigation",
+        handler: () => {
+          window.location.href = "/";
+        },
+      },{id: "nav-blog",
+              title: "blog",
+              description: "",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/blog/";
+              },
+            },{id: "nav-projects",
+              title: "projects",
+              description: "A growing collection of your cool projects.",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/projects/";
+              },
+            },{id: "nav-repositories",
+              title: "repositories",
+              description: "Repos from my Github",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/repositories/";
+              },
+            },{id: "nav-cv",
+              title: "CV",
+              description: "",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/cv/";
+              },
+            },{id: "post-pdm",
+          
+            title: "PDM",
+          
+          description: "PDM",
+          section: "Posts",
+          handler: () => {
+            
+              window.location.href = "/blog/2024/PDM/";
+            
+          },
+        },{id: "post-custom",
+          
+            title: "CUSTOM",
+          
+          description: "PDM",
+          section: "Posts",
+          handler: () => {
+            
+              window.location.href = "/blog/2024/CUSTOMIZE/";
+            
+          },
+        },{id: "post-a-post-with-code",
+          
+            title: "a post with code",
+          
+          description: "an example of a blog post with some code",
+          section: "Posts",
+          handler: () => {
+            
+              window.location.href = "/blog/2015/code/";
+            
+          },
+        },{id: "news-beginn-of-my-bachelor-thesis",
+              title: 'Beginn of my bachelor thesis',
+              description: "",
+              section: "News",handler: () => {
+                  window.location.href = "/news/announcement_2/";
+                },},{id: "projects-project-lsp",
+              title: 'project lsp',
+              description: "building a lsp-server",
+              section: "Projects",handler: () => {
+                  window.location.href = "/projects/9_project/";
+                },},{
+          id: 'light-theme',
+          title: 'Change theme to light',
+          description: 'Change the theme of the site to Light',
+          section: 'Theme',
+          handler: () => {
+            setThemeSetting("light");
+          },
+        },
+        {
+          id: 'dark-theme',
+          title: 'Change theme to dark',
+          description: 'Change the theme of the site to Dark',
+          section: 'Theme',
+          handler: () => {
+            setThemeSetting("dark");
+          },
+        },
+        {
+          id: 'system-theme',
+          title: 'Use system default theme',
+          description: 'Change the theme of the site to System Default',
+          section: 'Theme',
+          handler: () => {
+            setThemeSetting("system");
+          },
+        },];
+  </script>
+  <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script>
+
 
   </body>
 </html>
